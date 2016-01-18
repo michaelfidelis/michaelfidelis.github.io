@@ -11,5 +11,18 @@ domain_name: 'http://mclexr.gitgub.io'
 google_analytics: 'UA-72547169-1'
 
 # Details for the RSS feed generator
-url:            'https://mclexr.github.io'
-author:         'Michael Fidelis'
+url: 'http://mclexr.github.io'
+
+author:
+    name: Michael Fidelis
+    thumb: /assets/images/profile.jpg
+    bio: Desenvolvedor fullstack, entusiasta de novas ttecnologias e apaixonado pelo que faz!.
+    url:
+        twitter: 'https://twitter.com/mclexr'
+        linkedin: 'http://br.linkedin.com/in/mclexr'
+        email: 'mclexr@gmail.com'
+
+urls:
+    about: /sobre
+
+img_path: /assets/images/
