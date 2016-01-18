@@ -1,13 +1,11 @@
-name: '#MichaelDeveloper'
-description: 'Vamos falar sobre código!'
-meta_description: ""
+name: Michael Fidelis
+description: FullStack Developer
 
 markdown: redcarpet
 highlighter: pygments
-logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://mclexr.gitgub.io'
+domain_name: 'http://mclexr.github.io'
 google_analytics: 'UA-72547169-1'
 
 # Details for the RSS feed generator
@@ -16,7 +14,7 @@ url: 'http://mclexr.github.io'
 author:
     name: Michael Fidelis
     thumb: /assets/images/profile.jpg
-    bio: Desenvolvedor fullstack, entusiasta de novas ttecnologias e apaixonado pelo que faz!.
+    bio: Desenvolvedor fullstack, entusiasta de novas ttecnologias e apaixonado pelo que faz!
     url:
         twitter: 'https://twitter.com/mclexr'
         linkedin: 'http://br.linkedin.com/in/mclexr'
