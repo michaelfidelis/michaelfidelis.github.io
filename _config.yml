@@ -1,0 +1,15 @@
+name: '#MichaelDeveloper'
+description: 'Vamos falar sobre código!'
+meta_description: ""
+
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://mclexr.gitgub.io'
+google_analytics: 'UA-72547169-1'
+
+# Details for the RSS feed generator
+url:            'https://mclexr.github.io'
+author:         'Michael Fidelis'
