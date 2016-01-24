@@ -54,7 +54,7 @@ A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a vá
 Podemos mostrar o valor da variável na tela, usando o par de colchetes **\{\{ \}\}**, veja: 
 
 ```html
-<h1>Olá \{\{nome\}\}</h1>
+<h1>Olá {{nome}}</h1>
 ```
 
 Juntando tudo temos algo parecido com o código abaixo: 
@@ -71,7 +71,7 @@ Juntando tudo temos algo parecido com o código abaixo:
     <label for="nome">
         <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
     </label>
-    <h1 class="text-center">Olá \{\{nome\}\}!</h1>
+    <h1 class="text-center">Olá {{nome}}!</h1>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
@@ -101,7 +101,7 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </head>
 
 <body>
-    <h1 class="text-center">Olá {% raw %}{{nome}}{% endraw %}!</h1>
+    <h1 class="text-center">Olá {{nome}}!</h1>
 
     <div class="form-group col-md-offset-3 col-md-6">
         <input class="form-control" type="text" name="nome" ng-model="nome" placeholder="Digite seu nome...">
