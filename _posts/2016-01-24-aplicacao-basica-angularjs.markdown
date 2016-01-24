@@ -3,12 +3,11 @@ layout: post
 title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
 categories: AngularJs
-
 ---
 
 AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 
 
-##Estrutura inicial
+## Estrutura inicial
 
 A estrutura da página é praticamente a mesma. Puro HTML, com a inclusão de algumas diretivas.
 
@@ -30,9 +29,10 @@ A estrutura que iremos utilizar inicialmente é essa:
 </body>
 
 </html>
+
 ```
 
-##Conceitos 
+## Conceitos 
 
 Para que possamos fazer algo com angular em nossa página devemos inicializar a aplicação atravez da diretiva ```ng-app```.
 
@@ -83,7 +83,7 @@ Digite alguma coisa e veja o que acontece. O texto da váriavel `nome` muda auto
 
 Como? O Angular faz **bind** automático de suas variáveis, ou seja, se o valor for alterado, todas as suas referências são atualizadas.
 
-###Plus: Estilizando a página com TwitterBootstrap
+## Plus: Estilizando a página com TwitterBootstrap
 
 O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um framework CSS com um monte de classes para estilizar os componentes da página. 
 
@@ -113,9 +113,9 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </html>
 ```
 
-Você pode conferir o [resultado aqui](demos/2016-01-24-aplicacao-basica-angularjs.html).
+Você pode conferir o [resultado aqui]({{ site.baseurl }}demos/2016-01-24-aplicacao-basica-angularjs.html).
 
-##Não acaba por aqui!
+## Não acaba por aqui!
 O Angular possui muitas outras coisas bem legais, *controllers*, *services*, *routes* e por aí vai. Nos próximos posts iremos mais a fundo nesses assuntos. Enquanto isso, dê uma olhada no [site do AngularJs](http://angularjs.org), tem um guia de refêrencia bem completo.
 
 Se preferir outros blogs recomendo o [Tableless](http://tableless.com.br) ou [Scoth.io](scotch.io).
