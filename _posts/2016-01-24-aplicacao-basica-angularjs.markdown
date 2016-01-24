@@ -2,11 +2,11 @@
 layout: post
 title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
-categories: Web AngularJs Develop
+categories: AngularJs
 
 ---
 
-AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender.
+AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 
 
 ##Estrutura inicial
 
@@ -34,7 +34,7 @@ A estrutura que iremos utilizar inicialmente é essa:
 
 ##Conceitos 
 
-Para que possamos fazer algo com angular em nossa página devemos inicializar a aplicação atravez da diretiva `ng-app`.
+Para que possamos fazer algo com angular em nossa página devemos inicializar a aplicação atravez da diretiva ```ng-app```.
 
 Normalmente é inserida na tag html: 
 
@@ -42,14 +42,14 @@ Normalmente é inserida na tag html:
 <html ng-app>
 ```
 
-Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela diretiva `ng-model`
+Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela diretiva ```ng-model```
 
 
 ```
     <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
 ```
 
-A diretiva `ng-model='nome'` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
+A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
 
 Podemos mostrar o valor da variável na tela, usando o par de colchetes **\{\{ \}\}**, veja: 
 
@@ -71,7 +71,7 @@ Juntando tudo temos algo parecido com o código abaixo:
     <label for="nome">
         <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
     </label>
-    <h1 class="text-center">Olá \{\{nome\}\}!</h1>
+    <h1 class="text-center">Olá {{nome}}!</h1>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
@@ -83,7 +83,7 @@ Digite alguma coisa e veja o que acontece. O texto da váriavel `nome` muda auto
 
 Como? O Angular faz **bind** automático de suas variáveis, ou seja, se o valor for alterado, todas as suas referências são atualizadas.
 
-### Plus: Estilizando a página com TwitterBootstrap
+###Plus: Estilizando a página com TwitterBootstrap
 
 O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um framework CSS com um monte de classes para estilizar os componentes da página. 
 
@@ -101,18 +101,19 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </head>
 
 <body>
-    <h1 class="text-center">Olá \{\{nome\}\}!</h1>
+    <h1 class="text-center">Olá {{nome}}!</h1>
 
     <div class="form-group col-md-offset-3 col-md-6">
         <input class="form-control" type="text" name="nome" ng-model="nome" placeholder="Digite seu nome...">
     </div>
 
-    <!-- SCRIPTS -->
-    <script src="assets/js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
 
 </html>
 ```
+
+Você pode conferir o [resultado aqui](demos/2016-01-24-aplicacao-basica-angularjs.html).
 
 ##Não acaba por aqui!
 O Angular possui muitas outras coisas bem legais, *controllers*, *services*, *routes* e por aí vai. Nos próximos posts iremos mais a fundo nesses assuntos. Enquanto isso, dê uma olhada no [site do AngularJs](http://angularjs.org), tem um guia de refêrencia bem completo.
