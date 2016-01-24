@@ -15,7 +15,7 @@ Diretivas são "propriedades" que podemos adicionar à tag. Você pode criar as 
 
 A estrutura que iremos utilizar inicialmente é essa:
 
-```html
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +30,7 @@ A estrutura que iremos utilizar inicialmente é essa:
 
 </html>
 
-```
+{% endhighlight %}
 
 ## Conceitos 
 
@@ -38,28 +38,28 @@ Para que possamos fazer algo com angular em nossa página devemos inicializar a 
 
 Normalmente é inserida na tag html: 
 
-```html
+{% highlight html linenos %}
 <html ng-app>
-```
+{% endhighlight %}
 
 Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela diretiva ```ng-model```
 
 
-```html
+{% highlight html linenos %}
     <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
-```
+{% endhighlight %}
 
 A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
 
 Podemos mostrar o valor da variável na tela, usando o par de colchetes **\{\{ \}\}**, veja: 
 
-```html
-<h1>Olá {{nome}}</h1>
-```
+{% highlight html linenos %}
+<h1>Olá {% raw %}{{nome}}{% endraw %}!</h1>
+{% endhighlight %}
 
 Juntando tudo temos algo parecido com o código abaixo: 
 
-```html
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html ng-app>
 
@@ -71,13 +71,13 @@ Juntando tudo temos algo parecido com o código abaixo:
     <label for="nome">
         <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
     </label>
-    <h1 class="text-center">Olá {{nome}}!</h1>
+    <h1 class="text-center">Olá {% raw %}{{nome}}{% endraw %}!</h1>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
 
 </html>
-```
+{% endhighlight %}
 
 Digite alguma coisa e veja o que acontece. O texto da váriavel `nome` muda automaticamente!
 
@@ -87,7 +87,7 @@ Como? O Angular faz **bind** automático de suas variáveis, ou seja, se o valor
 
 O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um framework CSS com um monte de classes para estilizar os componentes da página. 
 
-```html
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html lang="pt-br" ng-app>
 
@@ -101,7 +101,7 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </head>
 
 <body>
-    <h1 class="text-center">Olá {{nome}}!</h1>
+    <h1 class="text-center">Olá {% raw %}{{nome}}{% endraw %}!</h1>
 
     <div class="form-group col-md-offset-3 col-md-6">
         <input class="form-control" type="text" name="nome" ng-model="nome" placeholder="Digite seu nome...">
@@ -111,7 +111,7 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </body>
 
 </html>
-```
+{% endhighlight %}
 
 Você pode conferir o [resultado aqui]({{ site.baseurl }}demos/2016-01-24-aplicacao-basica-angularjs.html).
 
@@ -122,4 +122,4 @@ Se preferir outros blogs recomendo o [Tableless](http://tableless.com.br) ou [Sc
 
 O [Bootstrap](http://getbootstrap.com) ajuda muito se você não quiser perder tempo mexendo no estilo da página (ou for ruim de design, assim como eu). Assim como ele há outros, como o [Material Design Lite](www.getmdl.io) da Google ou [Foundation Zurb](http://foundation.zurb.com).
 
-Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts =)
+Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts :)
