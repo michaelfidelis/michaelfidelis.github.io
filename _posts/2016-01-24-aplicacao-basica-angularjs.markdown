@@ -15,7 +15,7 @@ Diretivas são "propriedades" que podemos adicionar à tag. Você pode criar as 
 
 A estrutura que iremos utilizar inicialmente é essa:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +30,7 @@ A estrutura que iremos utilizar inicialmente é essa:
 
 </html>
 
-{% endhighlight %}
+```
 
 ## Conceitos 
 
@@ -122,4 +122,4 @@ Se preferir outros blogs recomendo o [Tableless](http://tableless.com.br) ou [Sc
 
 O [Bootstrap](http://getbootstrap.com) ajuda muito se você não quiser perder tempo mexendo no estilo da página (ou for ruim de design, assim como eu). Assim como ele há outros, como o [Material Design Lite](www.getmdl.io) da Google ou [Foundation Zurb](http://foundation.zurb.com).
 
-Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts :stuck_out_tongue_winking_eye:
+Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts =)
