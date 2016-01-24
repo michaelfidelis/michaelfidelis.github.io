@@ -38,28 +38,28 @@ Para que possamos fazer algo com angular em nossa página devemos inicializar a 
 
 Normalmente é inserida na tag html: 
 
-{% highlight html %}
+```html
 <html ng-app>
-{% endhighlight %}
+```
 
 Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela diretiva ```ng-model```
 
 
-{% highlight html %}
+```html
     <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
-{% endhighlight %}
+```
 
 A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
 
 Podemos mostrar o valor da variável na tela, usando o par de colchetes **\{\{ \}\}**, veja: 
 
-{% highlight html %}
-<h1>Olá {% raw %}{{nome}}{% endraw %}!</h1>
-{% endhighlight %}
+```html
+<h1>Olá \{\{nome\}\}</h1>
+```
 
 Juntando tudo temos algo parecido com o código abaixo: 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html ng-app>
 
@@ -71,13 +71,13 @@ Juntando tudo temos algo parecido com o código abaixo:
     <label for="nome">
         <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
     </label>
-    <h1 class="text-center">Olá {% raw %}{{nome}}{% endraw %}!</h1>
+    <h1 class="text-center">Olá \{\{nome\}\}!</h1>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
 
 </html>
-{% endhighlight %}
+```
 
 Digite alguma coisa e veja o que acontece. O texto da váriavel `nome` muda automaticamente!
 
@@ -87,7 +87,7 @@ Como? O Angular faz **bind** automático de suas variáveis, ou seja, se o valor
 
 O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um framework CSS com um monte de classes para estilizar os componentes da página. 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br" ng-app>
 
@@ -111,7 +111,7 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </body>
 
 </html>
-{% endhighlight %}
+```
 
 Você pode conferir o [resultado aqui]({{ site.baseurl }}demos/2016-01-24-aplicacao-basica-angularjs.html).
 
