@@ -2011,7 +2011,7 @@ body:not(.post-template) .post-title {
     letter-spacing: 0;
     color: #fff;
     border: 0px solid currentColor;
-    min-width: 44.5%;
+    min-width: 100%;
 }
 
 .btn:hover {

@@ -28,7 +28,7 @@ post_class: post-template
         {{content}}
 
         {% if page.demo %}
-            <script async src="//jsfiddle.net/mclexr/{{page.demo}}/embed/"></script>
+            <a href="{{site.urls.demo}}{{page.demo}}" class="btn btn--blue">DEMO</a>
         {% endif %}
     </section>
 

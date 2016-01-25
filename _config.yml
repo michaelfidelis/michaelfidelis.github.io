@@ -26,3 +26,5 @@ urls:
     demo: /demos/
 
 img_path: /assets/images/
+
+gems: [jekyll-paginate]

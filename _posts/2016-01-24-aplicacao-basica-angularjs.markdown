@@ -3,7 +3,7 @@ layout: post
 title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
 categories: AngularJs
-demo: p7e3yejp
+demo: 2016-01-24-aplicacao-basica-angularjs.html
 ---
 
 AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 
@@ -44,7 +44,7 @@ Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela
 
 
 ```html
-    <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
+<input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
 ```
 
 A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
