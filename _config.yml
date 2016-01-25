@@ -24,6 +24,5 @@ author:
 urls:
     about: /sobre
     demo: /demos/
-    code: https://github.com/mclexr/mclexr.github.io/blob/master/demos/
 
 img_path: /assets/images/

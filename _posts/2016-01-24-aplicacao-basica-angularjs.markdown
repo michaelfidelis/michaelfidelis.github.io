@@ -3,7 +3,7 @@ layout: post
 title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
 categories: AngularJs
-demo: 2016-01-24-aplicacao-basica-angularjs.html
+demo: p7e3yejp
 ---
 
 AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 
@@ -19,18 +19,15 @@ A estrutura que iremos utilizar inicialmente é essa:
 ```html
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>AngularJs</title>
 </head>
-
 <body>
   
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 </body>
 
 </html>
-
 ```
 
 ## Conceitos 

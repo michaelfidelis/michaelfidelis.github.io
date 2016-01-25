@@ -16,60 +16,57 @@ post_class: post-template
 
     <article class="post">
 
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <section class="post-meta">
-                <time class="post-date" datetime="{{ page.date | date:" %Y-%m-%d " }}">{{ page.date | date_to_string }}</time>
-                {% if page.categories.size > 0 %} {{ page.categories | array_to_sentence_string | prepend: 'em ' }} {% endif %}
-            </section>
-        </header>
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <section class="post-meta">
+            <time class="post-date" datetime="{{ page.date | date:" %Y-%m-%d " }}">{{ page.date | date_to_string }}</time>
+            {% if page.categories.size > 0 %} {{ page.categories | array_to_sentence_string | prepend: 'em ' }} {% endif %}
+        </section>
+    </header>
 
-        <section class="post-content">
-    {{content}}
+    <section class="post-content">
+        {{content}}
+
         {% if page.demo %}
-        <div class="btn-control">
-            <a href="{{site.urls.demo}}{{page.demo}}" class="btn btn--blue">DEMO</a>
-            <a href="{{site.urls.code}}{{page.demo}}" class="btn btn--red">CÓDIGO</a>
-        </div>
+            <script async src="//jsfiddle.net/mclexr/{{page.demo}}/embed/"></script>
         {% endif %}
-</section>
+    </section>
 
-        {% if page.archive %}
-        <section class="archive">
-            <h5>Veja mais:</h5>
-            <ul>
-                {% for post in site.posts %}
-                <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
+    {% if page.archive %}
+    <section class="archive">
+        <h5>Veja mais:</h5>
+        <ul>
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    <footer class="post-footer">
+        <!-- If we want to display author's name and bio -->
+        {% if site.author %}
+        <figure class="author-image">
+            <a class="img" href="{{ site.urls.about }}" style="background-image: url({{site.author.thumb}})">
+                <span class="hidden">{{site.author.name}}'s Picture</span></a>
+        </figure>
+        <section class="author">
+            <!-- Author Name -->
+            <h4> {{ site.author.name }} </h4>
+            <!-- Author Bio -->
+            <p>
+                {{ site.author.bio }}
+            </p>
         </section>
         {% endif %}
 
-        <footer class="post-footer">
-            <!-- If we want to display author's name and bio -->
-            {% if site.author %}
-            <figure class="author-image">
-                <a class="img" href="{{ site.urls.about }}" style="background-image: url({{site.author.thumb}})">
-                    <span class="hidden">{{site.author.name}}'s Picture</span></a>
-            </figure>
-            <section class="author">
-                <!-- Author Name -->
-                <h4> {{ site.author.name }} </h4>
-                <!-- Author Bio -->
-                <p>
-                    {{ site.author.bio }}
-                </p>
-            </section>
-            {% endif %}
+        <!-- Share links section -->
+        {% include share.html %}
 
-            <!-- Share links section -->
-            {% include share.html %}
+        <!-- Disqus comments -->
+        {% if page.disqus %} {% include disqus.html %} {% endif %}
 
-            <!-- Disqus comments -->
-            {% if page.disqus %} {% include disqus.html %} {% endif %}
+    </footer>
 
-        </footer>
-
-    </article>
-
+</article>
 </main>
