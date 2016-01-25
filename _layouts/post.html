@@ -25,8 +25,14 @@ post_class: post-template
         </header>
 
         <section class="post-content">
-            {{content}}
-        </section>
+    {{content}}
+        {% if page.demo %}
+        <div class="btn-control">
+            <a href="{{site.urls.demo}}{{page.demo}}" class="btn btn--blue">DEMO</a>
+            <a href="{{site.urls.code}}{{page.demo}}" class="btn btn--red">CÓDIGO</a>
+        </div>
+        {% endif %}
+</section>
 
         {% if page.archive %}
         <section class="archive">

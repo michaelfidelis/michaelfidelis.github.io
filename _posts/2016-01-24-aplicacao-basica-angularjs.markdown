@@ -3,6 +3,7 @@ layout: post
 title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
 categories: AngularJs
+demo: 2016-01-24-aplicacao-basica-angularjs.html
 ---
 
 AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 
@@ -15,7 +16,7 @@ Diretivas são "propriedades" que podemos adicionar à tag. Você pode criar as 
 
 A estrutura que iremos utilizar inicialmente é essa:
 
-{% highlight html linenos %}
+```html
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +31,7 @@ A estrutura que iremos utilizar inicialmente é essa:
 
 </html>
 
-{% endhighlight %}
+```
 
 ## Conceitos 
 
@@ -38,28 +39,28 @@ Para que possamos fazer algo com angular em nossa página devemos inicializar a 
 
 Normalmente é inserida na tag html: 
 
-{% highlight html linenos %}
+```html
 <html ng-app>
-{% endhighlight %}
+```
 
 Pronto! Nossa aplicação foi inicializada. Agora podemos indicar os campos pela diretiva ```ng-model```
 
 
-{% highlight html linenos %}
+```html
     <input type="text" name="nome" placeholder="Digite seu nome..." ng-model="nome">
-{% endhighlight %}
+```
 
 A diretiva ```ng-model='nome'``` quer dizer que nosso campo apontando para a váriavel **nome** no angular que, se não existir, é criada automaticamente. 
 
 Podemos mostrar o valor da variável na tela, usando o par de colchetes **\{\{ \}\}**, veja: 
 
-{% highlight html linenos %}
+```html
 <h1>Olá {% raw %}{{nome}}{% endraw %}!</h1>
-{% endhighlight %}
+```
 
 Juntando tudo temos algo parecido com o código abaixo: 
 
-{% highlight html linenos %}
+```html
 <!DOCTYPE html>
 <html ng-app>
 
@@ -77,7 +78,7 @@ Juntando tudo temos algo parecido com o código abaixo:
 </body>
 
 </html>
-{% endhighlight %}
+```
 
 Digite alguma coisa e veja o que acontece. O texto da váriavel `nome` muda automaticamente!
 
@@ -87,7 +88,7 @@ Como? O Angular faz **bind** automático de suas variáveis, ou seja, se o valor
 
 O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um framework CSS com um monte de classes para estilizar os componentes da página. 
 
-{% highlight html linenos %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br" ng-app>
 
@@ -111,9 +112,7 @@ O resultado ficou legal, mas o visual não ajudou muito? O Bootstrap é um frame
 </body>
 
 </html>
-{% endhighlight %}
-
-Você pode conferir o [resultado aqui]({{ site.baseurl }}demos/2016-01-24-aplicacao-basica-angularjs.html).
+```
 
 ## Não acaba por aqui!
 O Angular possui muitas outras coisas bem legais, *controllers*, *services*, *routes* e por aí vai. Nos próximos posts iremos mais a fundo nesses assuntos. Enquanto isso, dê uma olhada no [site do AngularJs](http://angularjs.org), tem um guia de refêrencia bem completo.
@@ -122,4 +121,4 @@ Se preferir outros blogs recomendo o [Tableless](http://tableless.com.br) ou [Sc
 
 O [Bootstrap](http://getbootstrap.com) ajuda muito se você não quiser perder tempo mexendo no estilo da página (ou for ruim de design, assim como eu). Assim como ele há outros, como o [Material Design Lite](www.getmdl.io) da Google ou [Foundation Zurb](http://foundation.zurb.com).
 
-Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts :)
+Espero que tenham gostado. Peço que comentem para que eu possa melhorar nos próximos posts =)

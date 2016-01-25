@@ -1,4 +1,4 @@
-name: Michael Fidelis
+name: Blog do Michael Fidelis
 description: FullStack Developer
 
 markdown: redcarpet
@@ -23,5 +23,7 @@ author:
 
 urls:
     about: /sobre
+    demo: /demos/
+    code: https://github.com/mclexr/mclexr.github.io/blob/master/demos/
 
 img_path: /assets/images/
