@@ -4,6 +4,8 @@ title: "Construindo uma aplicação básica com AngularJs"
 date: 2016-01-24 01:30:00
 categories: AngularJs
 demo: 2016-01-24-aplicacao-basica-angularjs.html
+desc: Vamos criar uma aplicação básica com angular e entender o funcionamento deste poderoso framework.
+keywords: AngularJs, web, javascript, html5, JS, Google Angular, front-end, bootstrap
 ---
 
 AngularJs é um framework da Google que eu tenho utilizado bastante ultimamente. Ele facilita o desenvolvimento e é fácil de aprender. 

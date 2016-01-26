@@ -4,9 +4,11 @@ title: "Usando Controllers no AngularJs"
 date: 2016-01-25 20:30:00
 categories: AngularJs
 demo: 2016-01-25-usando-controllers-angularjs/
+desc: Que tal a sua página e o javascript se conhecerem? Crie controllers para que possam conversar melhor!
+keywords: AngularJs, Bootstrap, controllers, ngController, javascript
 ---
 
-No post anterior vimos a aplicação mais básica que podemos construir com angular. Agora faremos algo um pouco mais bacana, vamos conhecer os controllers. Com eles podemos controlar componentes da tela, acessar serviços etc. 
+No post anterior vimos a aplicação mais básica que podemos construir com angular. Agora faremos algo um pouco mais bacana, vamos conhecer os controllers. Com eles podemos manipular componentes da tela, acessar serviços etc. 
 
 No fim desse tutorial teremos uma lista de contatos com as opções de adicionar e remover.
 
