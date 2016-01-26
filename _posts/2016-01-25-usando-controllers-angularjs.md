@@ -4,7 +4,7 @@ title: "Usando Controllers no AngularJs"
 date: 2016-01-25 20:30:00
 categories: AngularJs
 demo: 2016-01-25-usando-controllers-angularjs/
-desc: Que tal a sua página e o javascript se conhecerem? Crie controllers para que possam conversar melhor!
+description: Que tal a sua página e o javascript se conhecerem? Crie controllers para que possam conversar melhor!
 keywords: AngularJs, Bootstrap, controllers, ngController, javascript
 ---
 
