@@ -1,8 +1,9 @@
 
 .highlight {
 	background: #ffffff;
-    font-size: 0.8em;
-    line-height: 1.2em;
+    	font-size: 0.8em;
+    	line-height: 1.2em;
+    	overflow-x:auto;
 	.c { color: #999988; font-style: italic } /* Comment */
 	.err { color: #a61717; background-color: #e3d2d2 } /* Error */
 	.k { font-weight: bold } /* Keyword */
