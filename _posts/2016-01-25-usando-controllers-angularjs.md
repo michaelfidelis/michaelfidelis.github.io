@@ -228,7 +228,7 @@ Também podemos mostrar uma mensagem caso não haja contatos cadastrados. Basta 
 ```
 
 ## Resultado
-### index.html
+#### index.html
 
 ```html
 <!DOCTYPE html>
@@ -271,8 +271,8 @@ Também podemos mostrar uma mensagem caso não haja contatos cadastrados. Basta 
         </thead>
         <tbody>
             <tr ng-repeat="contato in contatoController.contatos">
-                <td>{{contato.nome}}</td>
-                <td>{{contato.telefone}}</td>
+                <td>{% raw %}{{contato.nome}}{% endraw %}</td>
+                <td>{% raw %}{{contato.telefone}}{% endraw %}</td>
                 <td>
                     <button class="btn btn-danger btn-xs" ng-click="contatoController.removerContato($index)">remover</button>
                 </td>
@@ -289,7 +289,7 @@ Também podemos mostrar uma mensagem caso não haja contatos cadastrados. Basta 
 
 ```
 
-### app.js
+#### app.js
 
 ```javascript
 angular.module('app', [])
