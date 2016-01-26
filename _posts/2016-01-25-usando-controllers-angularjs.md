@@ -226,4 +226,100 @@ Também podemos mostrar uma mensagem caso não haja contatos cadastrados. Basta 
 ```html
 <h3 class="text-center" ng-show="contatoController.contatos.length == 0">Não há contatos cadastrados.</h3>
 ```
+
+## Resultado
+### index.html
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Usando Controllers</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="container" ng-controller="ContatoController as contatoController">
+    <h1>Contatos</h1>
+    <form>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" placeholder="José Silva" ng-model="contatoController.contato.nome">
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" class="form-control" placeholder="(11) 91234-5678" ng-model="contatoController.contato.telefone">
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-click="contatoController.adicionarContato()">Salvar</button>
+    </form>
+    <h3 class="text-center" ng-show="contatoController.contatos.length == 0">Não há contatos cadastrados.</h3>
+
+    <table class="table" ng-show="contatoController.contatos.length > 0">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contato in contatoController.contatos">
+                <td>{{contato.nome}}</td>
+                <td>{{contato.telefone}}</td>
+                <td>
+                    <button class="btn btn-danger btn-xs" ng-click="contatoController.removerContato($index)">remover</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <script src="../assets/js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
+
+```
+
+### app.js
+
+```javascript
+angular.module('app', [])
+    .controller('ContatoController', ContatoController);
+
+
+function ContatoController() {
+    var vm = this; //Guardamos o escopo em uma variável
+    vm.contato = {}; //Contato do formulário
+    vm.contatos = []; //Nossa lista de contatos
+
+    vm.adicionarContato = adicionarContato;
+    vm.removerContato = removerContato;
+
+    function adicionarContato() {
+        //Incluimos o contato na lista
+        vm.contatos.push({
+            nome: vm.contato.nome,
+            telefone: vm.contato.telefone
+        });
+
+        //Resetamos o contato do formulário
+        vm.contato = {};
+    }
+
+    function removerContato(index) {
+        //Removemos o contato da lista
+        vm.contatos.splice(index, 1);
+    }
+}
+
+```
 Acabamos nossa lista de contatos! Hoje aprendemos a adicionar e remover itens de uma lista usando controllers do angular e, de quebra, aprendemos a utilizar o `ng-show`. Bacana não? Deixe sua opinião nos comentários.  
