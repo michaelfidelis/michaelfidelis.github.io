@@ -63,17 +63,17 @@
 	.il { color: #009999 } /* Literal.Number.Integer.Long */
 }
 
-.highlight pre code * {
-  white-space: nowrap;
-}
+//.highlight pre code * {
+//  white-space: nowrap;
+//}
 
-.highlight pre {
-  overflow-x: auto;
-}
+//.highlight pre {
+//  overflow-x: auto;
+//}
 
-.highlight pre code {
-  white-space: pre;
-}
+//.highlight pre code {
+//  white-space: pre;
+//}
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
