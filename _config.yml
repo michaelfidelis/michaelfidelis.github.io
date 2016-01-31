@@ -5,11 +5,11 @@ markdown: redcarpet
 highlighter: pygments
 paginate: 15
 baseurl: /
-domain_name: 'http://mclexr.github.io'
+domain_name: 'http://michaelfidelis.github.io'
 google_analytics: 'UA-72547169-1'
-
+permalink: '/:categories/:title/'
 # Details for the RSS feed generator
-url: 'http://mclexr.github.io'
+url: 'http://michaelfidelis.github.io'
 
 author:
     name: Michael Fidelis
