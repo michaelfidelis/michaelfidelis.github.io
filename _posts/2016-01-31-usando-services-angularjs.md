@@ -216,10 +216,10 @@ Para impedir que seja inserida uma tarefa em branco você pode inserir a diretiv
 
 O que significa **tarefaForm.tarefa.$error.required**?
 
-
- nome do formulário | nome do componente | tipo de verificação | qual verificacao 
- -------------------|--------------------|---------------------|-------------------
- tarefaForm         | tarefa             | $error              | required
+```bash
+  tarefaForm    .   tarefa          .   $error                .   required
+ [nome do form] .  [nome do campo]  .  [tipo de verificação]  . [verificação]
+```
 
 ### Diretivas utilizadas
 
