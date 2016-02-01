@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Aprendendo Services |MF Blog</title>
+</head>
+
+<body>
+
+    <section class="container" ng-controller="TarefaController as tarefaController">
+        <form name="tarefaForm" novalidate>
+
+            <div class="form-group col-md-12">
+                <h1 class="text-center">Tarefas</h1>
+            </div>
+            <div class="form-group col-md-offset-2 col-md-7">
+                <input class="form-control" name="tarefa" type="text" placeholder="Tarefa..." ng-model="tarefaController.tarefa.descricao" required>
+            </div>
+            <div class="form-group col-md-1">
+                <button class="btn btn-primary" ng-click="tarefaController.adicionarTarefa()" ng-disabled="tarefaForm.tarefa.$error.required">Add</button>
+            </div>
+
+            <div class="form-group col-md-offset-2 col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-class="{'list-group-item-success': tarefa.concluido}" ng-repeat="tarefa in tarefaController.tarefas">
+                        {{tarefa.descricao}}
+                        <a href="#" ng-click="tarefaController.alterarStatusTarefa($index)" class="pull-right">{{tarefa.concluido ? 'Retomar':'Concluir'}}</a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </section>
+
+    <script src="assets/js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/tarefa/tarefa.service.js"></script>
+    <script src="app/tarefa/tarefa.controller.js"></script>
+</body>
+
+</html>
