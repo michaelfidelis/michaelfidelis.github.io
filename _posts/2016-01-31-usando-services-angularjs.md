@@ -225,14 +225,13 @@ O que significa **tarefaForm.tarefa.$error.required**?
 
 Maiores explicações das diretivas podem ser encontradas na [documentação do angular](https://docs.angularjs.org/guide/directive)
 
-`ng-controller`: Indica o controller para determinada região da tela. 
-`ng-model`: Mapeia nosso campo para o controller. 
-`ng-class`: Se a condição passada for verdadeira ele adiciona uma classe CSS ao componente.
-`ng-repeat`: Itera sobre uma lista no controller.
-`ng-click`: É executada uma função assim que o componente é clicado.
-`ng-disabled`: O componente é desabilitado caso a condição verificada seja verdadeira.
+* `ng-controller`: Indica o controller para determinada região da tela. 
+* `ng-model`: Mapeia nosso campo para o controller. 
+* `ng-class`: Se a condição passada for verdadeira ele adiciona uma classe CSS ao componente.
+* `ng-repeat`: Itera sobre uma lista no controller.
+* `ng-click`: É executada uma função assim que o componente é clicado.
+* `ng-disabled`: O componente é desabilitado caso a condição verificada seja verdadeira.
 
 ## Vamos testar? 
 [Clique aqui]({{site.url}}/demos/2016-01-31-usando-services-angularjs/) e veja nossa aplicação funcionando.
-
-Confira o código final do post [nesse link](https://github.com/michaelfidelis/michaelfidelis.github.io/tree/master/demos/2016-01-31-usando-services-angularjs)
+Confira o código final do post [nesse link](https://github.com/michaelfidelis/michaelfidelis.github.io/tree/master/demos/2016-01-31-usando-services-angularjs).
