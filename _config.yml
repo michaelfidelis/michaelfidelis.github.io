@@ -2,7 +2,7 @@ name: Blog do Michael Fidelis
 description: FullStack Developer
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 paginate: 15
 baseurl: /
 domain_name: 'http://michaelfidelis.github.io'
