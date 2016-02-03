@@ -30,7 +30,7 @@ Vamos separar os arquivos de forma que cada componente fique em uma pasta separa
     |   ├── css/
     |   |   └── bootstrap.min.css
     |   └── js/
-    |        └── angular.min.js
+    |       └── angular.min.js
     └── tarefa/
         ├── tarefa.controller.js
         └── tarefa.service.js
@@ -191,17 +191,15 @@ Vou usar algumas classes do [bootstrap](http://getbootstrap.com/css/) para estil
         </div>
 
         <div class="form-group col-md-offset-2 col-md-8">
-        {% raw %}
             <ul class="list-group">
                 <li class="list-group-item" 
-                    ng-class="{'list-group-item-success': tarefa.concluido}" 
+                    ng-class="{% raw %}{'list-group-item-success': tarefa.concluido}{% endraw %}" 
                     ng-repeat="tarefa in tarefaController.tarefas">
-                    {{tarefa.descricao}}
+                    {% raw %}{{tarefa.descricao}}{% endraw %}
                     <a href="#" ng-click="tarefaController.alterarStatusTarefa($index)" 
-                        class="pull-right">{{tarefa.concluido ? 'Retomar':'Concluir'}}</a>
+                        class="pull-right">{% raw %}{{tarefa.concluido ? 'Retomar':'Concluir'}}{% endraw %}</a>
                 </li>
             </ul>
-        {% endraw %}
         </div>
     </form>
 </section>
@@ -218,10 +216,11 @@ Para impedir que seja inserida uma tarefa em branco você pode inserir a diretiv
 
 O que significa **tarefaForm.tarefa.$error.required**?
 
-```bash
-  tarefaForm    .   tarefa          .   $error                .   required
- [nome do form] .  [nome do campo]  .  [tipo de verificação]  . [verificação]
-```
+
+tarefaForm      |  tarefa          |  $error                | required
+----------------|------------------|------------------------|--------------------
+Nome do form    |  Nome do campo   |  Tipo de verificação   | Verificação
+                
 
 ### Diretivas utilizadas
 
