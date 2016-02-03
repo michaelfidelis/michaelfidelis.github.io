@@ -1,7 +1,7 @@
 name: Blog do Michael Fidelis
 description: FullStack Developer
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 paginate: 15
 baseurl: /
