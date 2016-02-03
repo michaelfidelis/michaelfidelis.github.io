@@ -191,6 +191,7 @@ Vou usar algumas classes do [bootstrap](http://getbootstrap.com/css/) para estil
         </div>
 
         <div class="form-group col-md-offset-2 col-md-8">
+        {% raw %}
             <ul class="list-group">
                 <li class="list-group-item" 
                     ng-class="{'list-group-item-success': tarefa.concluido}" 
@@ -200,6 +201,7 @@ Vou usar algumas classes do [bootstrap](http://getbootstrap.com/css/) para estil
                         class="pull-right">{{tarefa.concluido ? 'Retomar':'Concluir'}}</a>
                 </li>
             </ul>
+        {% endraw %}
         </div>
     </form>
 </section>
