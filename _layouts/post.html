@@ -68,20 +68,7 @@ post_class: post-template
         {% if page.disqus %} {% include disqus.html %} {% endif %}
 
     </footer>
-    <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Article",
-      "name" : "{{ page.title }}",
-      "author" : {
-        "@type" : "Person",
-        "name" : "{{ site.author.name }}"
-      },
-      "datePublished" : "{{ page.date | date: '%Y-%m-%d' }}",
-      "articleBody" : "{{ page.description }}",
-      "url": "{{site.url}}{{page.url}}"
-    }
-</script>
+
 
 <!-- Marcação estruturada para artigos -->
 <script type="application/ld+json">
@@ -94,7 +81,6 @@ post_class: post-template
     "startDate":"{{ page.date | date: '%Y-%m-%d' }}",
     "name":"{{page.title}}",
     }
-  },
   "coverageStartTime":"{{ page.date | date: '%Y-%m-%d' }}",
   "coverageEndTime":"{{ page.date | date: '%Y-%m-%d' }}",
   "headline":"{{page.title}}",
