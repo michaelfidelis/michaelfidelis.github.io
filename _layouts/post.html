@@ -68,32 +68,5 @@ post_class: post-template
         {% if page.disqus %} {% include disqus.html %} {% endif %}
 
     </footer>
-
-
-<!-- Marcação estruturada para artigos -->
-<script type="application/ld+json">
-{
-  "@context":"http://schema.org",
-  "@type":"LiveBlogPosting",
-  "@id":"{{site.url}}{{page.url}}",
-  "about":{
-    "@type":"Event",
-    "startDate":"{{ page.date | date: '%Y-%m-%d' }}",
-    "name":"{{page.title}}",
-    },
-  "coverageStartTime":"{{ page.date | date: '%Y-%m-%d' }}",
-  "coverageEndTime":"{{ page.date | date: '%Y-%m-%d' }}",
-  "headline":"{{page.title}}",
-  "description":"{{page.description}}",
-  "liveBlogUpdate":[
-    {
-      "@type":"BlogPosting",
-      "headline":"{{page.title}}",
-      "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
-      "articleBody": "{{page.description}}",
-     }
-  ]
-}
-</script>
 </article>
 </main>
