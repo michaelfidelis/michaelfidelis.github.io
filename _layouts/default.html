@@ -4,9 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="theme-color" content="#361947" />
     <meta name="author" content="https://plus.google.com/+MichaelFidelisDev"/>
-
+    
+    {% if page.theme %}
+       <meta name="theme-color" content="{{page.theme}}" />
+    {% endif %}
+     
     {% if page.title %}
         <title>{{ page.title }} - {{ site.name }}</title>
     {% else %}
