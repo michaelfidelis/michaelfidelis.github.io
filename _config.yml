@@ -22,7 +22,7 @@ author:
         email: 'mclexr@gmail.com'
 
 urls:
-    about: /sobre
+    about: /meuresumo
     demo: /demos/
 
 img_path: /assets/images/
