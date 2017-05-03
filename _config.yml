@@ -1,8 +1,15 @@
 name: Blog do Michael Fidelis
 description: FullStack Developer
 
+# Build settings
+jekyll-version: Jekyll v3.1.6
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
+
 paginate: 15
 baseurl: /
 domain_name: 'http://michaelfidelis.github.io'
